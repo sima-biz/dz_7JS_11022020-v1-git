@@ -21,10 +21,12 @@
 //   if (seconds < 10) {
 //     seconds = "0" + date.getSeconds()
 //   }
-//   document.body.innerText = [hours + ":" + minutes + ":" + seconds]
-//   setTimeout("clock()", 1000)
+//   let currentTime = hours + ":" + minutes + ":" + seconds
+//   document.body.innerText = currentTime 
 // }
+// setInterval(clock, 1000)
 // clock()
+
 
 
 ////////////////////////// option 2 ////////////
@@ -35,9 +37,10 @@
 //   let hours = (date.getHours() < 10) ? "0" + date.getHours() : date.getHours()
 //   let minutes = (date.getMinutes() < 10) ? "0" + date.getMinutes() : date.getMinutes()
 //   let seconds = (date.getSeconds() < 10) ? "0" + date.getSeconds() : date.getSeconds()
-//   document.body.innerText = [hours + ":" + minutes + ":" + seconds]
-//   setTimeout(clock, 1000)
+//   let currentTime = hours + ":" + minutes + ":" + seconds
+//   document.body.innerText = currentTime 
 // }
+// setInterval(clock, 1000) 
 // clock()
 
 ////////////////////////////////////////////////////////////////////////
@@ -52,14 +55,39 @@
 // }, 3500)
 // console.log("start result in 3.5 seconds")
 
+
+
+////////////////////////////////////////////////
+
+
+  // setTimeout(function() {
+  //    console.log("I'm a delayed function")
+  // }, 3500)
+  // console.log("start result in 3.5 seconds")
+
+/////////////////////////////////////////////////
+
+// function conso() {
+//   let text = "I'm a delayed function"
+//   setTimeout(function() {
+//     console.log(text)
+//   }, 3500)  
+// }
+// conso()
+// console.log("start result in 3.5 seconds")
+
 ////////////////////////// option 2 ////////////
 
 
-// function setTim() {
-//   console.log("I'm a delayed function")
+// function setTim(n) { 
+//   setTimeout(function() {
+//     console.log("I'm a delayed function")
+//   }, n) 
 // }
-// setTimeout(setTim, 3500)
+// setTim(3500)
 // console.log("start result in 3.5 seconds")
+
+
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -120,5 +148,4 @@
 // console.log(soArrHundBubb)
 // let soArrThousBubb = sortBubble(arrThous)
 // console.log(soArrThousBubb)
-
 
